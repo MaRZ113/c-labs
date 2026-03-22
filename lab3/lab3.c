@@ -3,7 +3,7 @@
 int main() {
 char str[85]; 
     int i;
-    printf("your string:\n");
+    printf("your ab string:\n");
     fgets(str, sizeof(str), stdin);
     for (i = 0; str[i] != '\0'; i++) {
         if (str[i] == 'a') {
@@ -12,6 +12,6 @@ char str[85];
             str[i] = 'B';
         }
     }
-    printf("your fixed string:\n%s", str);
+    printf("your ab CAPS string:\n%s", str);
     return 0;
 }
