@@ -1,41 +1,47 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <locale.h>
 #include "matrix.h"
 
 int main() {
     int n;
     char op;
+    int i, j;
+    double** A;
+    double** B;
+    double** C;
+
     printf("razmernost' n: ");
     if (scanf("%d", &n) != 1 || n <= 0) {
-        printf("ERROR: incorrect razmernost'!\n");
+        printf("ERROR: ne ta razmernost'!\n");
         return 1;
     }
 
-    double** A = allocate_matrix(n);
-    double** B = allocate_matrix(n);
+    A = allocate_matrix(n);
+    B = allocate_matrix(n);
 
     printf("elements of first matrix (%d x %d):\n", n, n);
-    for (int i = 0; i < n; i++) {
-        for (int j = 0; j < n; j++) {
+    for (i = 0; i < n; i++) {
+        for (j = 0; j < n; j++) {
             scanf("%lf", &A[i][j]);
         }
     }
 
     printf("elements of second matrix (%d x %d):\n", n, n);
-    for (int i = 0; i < n; i++) {
-        for (int j = 0; j < n; j++) {
+    for (i = 0; i < n; i++) {
+        for (j = 0; j < n; j++) {
             scanf("%lf", &B[i][j]);
         }
     }
 
-    printf("operation to use? (+, -, *): ");
+    printf("operation to use (+, -, *): ");
     scanf(" %c", &op); 
 
-    double** C = calculate(A, B, n, op);
+    C = calculate(A, B, n, op);
 
     printf("result:\n");
-    for (int i = 0; i < n; i++) {
-        for (int j = 0; j < n; j++) {
+    for (i = 0; i < n; i++) {
+        for (j = 0; j < n; j++) {
             printf("%.2lf ", C[i][j]);
         }
         printf("\n");
