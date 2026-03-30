@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-
 int main() {
     FILE *in_file;
     FILE *out_file;
