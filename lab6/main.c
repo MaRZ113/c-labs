@@ -14,6 +14,7 @@ int main() {
         printf("ERROR!\n");
         return 1;
     }
+    
     fprintf(in_file, "Ivanov 1975\n");
     fprintf(in_file, "Sidorov 1981\n");
     fprintf(in_file, "Vorobyaninov 1978\n");
