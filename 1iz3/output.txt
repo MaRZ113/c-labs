@@ -1,0 +1,19 @@
+target date: 10.11.2026
+days left: 136
+
+matrix size: 4x4. sum: 70
+tries: 6
+
+first matrix:
+   9   8   5   6
+   4   5   3   6
+   3   8   1   4
+   0   7   0   1
+
+second matrix:
+   9   7   7   5
+   8   7   7   2
+   3   9   0   1
+   0   2   3   0
+
+time: 0.819 seconds

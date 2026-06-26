@@ -1,0 +1,19 @@
+addition (A + B):
+   1   7
+  11   4
+
+multip (A * B):
+  14  14
+   4   4
+
+matrix A stats before swap:
+min element index: 1 (Value: 1)
+odd numbers count: 3
+
+matrix A after swapping pairs:
+   1   7
+   9   2
+
+identical lines check:
+matrix A: No
+matrix B: Yes
